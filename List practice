@@ -1,0 +1,10 @@
+#out put should be Cammy and Eagle without comma
+# * Operatior, element printed individually 
+# 
+'''and unpacks list'''
+Capcom = ["Sagat", "Kyo", "Cammy", "Blanka", "Eagle", "Rolento"]
+select_characters = Capcom[2], Capcom[4]
+print(Capcom[2], Capcom[4]) #Cammy, Eagle--> lists are zero index based that because of that python rules
+print(*Capcom)
+print(*select_characters)
+print(f"{Capcom[2]}")

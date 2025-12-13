@@ -1,0 +1,18 @@
+# fruits = ["apple", "orange", "banana"]
+# for index, fruit in enumerate(fruits, start=1):
+#     print(f"{index}. {fruit}")
+
+print("Mishimas in Tekken 8")
+mishimas = ["Jin", "Kazuya", "Heihachi", 
+            "Lars", "Renia", "Kasumi", "Devil JIn"]
+for i, mishima in enumerate(mishimas, start=1):
+    print(f"{i}. {mishima}")
+
+print()
+
+print("Super Turbo Fighters")
+characters = [ "Ryu", "Ken", "Chun Li", "Bison",
+               "Cammy", "Blanka", "Fei Long",
+               "Dalsim","E.Honda","Vega","Boxer"]
+for i, character in enumerate(characters, start=1):
+    print(f"{i}. {character}")
