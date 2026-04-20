@@ -1,0 +1,70 @@
+#extraxing even numbers
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(nums[::2])
+
+items = ['apple', 'orange', 'banana', 'grape'] #extracing last 2 items
+print(items[2:])
+
+data = [10, 20, 30, 40, 50] #etract only 10,20
+print(data[0:2])
+
+#print 998877
+sn = 'SN-998877' 
+print(sn[3:])
+
+text = 'ROBOTICS' #looking for ROB
+print(text[:3])
+
+nums = [0, 1, 2, 3, 4, 5] # print only 2 to the end 
+print(nums[2:])
+
+alpha = 'ABCDEFGHI'[1:7:2] #print BDF
+print(alpha[1:7:2])
+
+access_logs = ["Admin", "User_A", "Guest", "User_B", "Malware_IP", "Root", "Dev"]
+print(access_logs[-4:-2]) #User_B" and "Malware_IP (- slice)
+print(access_logs[:3]) #first three items: "Admin", "User_A", and "Guest" (+slice)
+print(access_logs[::2]) #["Admin", "Guest", "Malware_IP", "Dev"]
+print(access_logs[::-1]) #reverse the entire list so the most recent activity
+print(access_logs[-2:-4:-1]) #Root" and "Malware_IP" in that specific order (backward)
+print(access_logs[2:]) #Using Positive Slicing, grab everything from "Guest"
+print(access_logs[-6:-3]) #Extract "User_A", "Guest", and "User_B" (-Slicing)
+print(access_logs[::-2]) #Extract "Dev", "Malware_IP", "Guest", and "Admin"
+print(access_logs[-2::-3]) #Root" and "User_A" in that specific order (backward)
+print(access_logs[-2:-7:-1]) #"Root", "Malware_IP", "User_B", "Guest", "User_A"
+print(access_logs[-4:-8:-3]) #User_B" and "Admin" (- Slice)
+print(access_logs[-1:-6:-3]) #Dev" and "Guest" - Slice
+print(access_logs[6:3:-1]) #last three in reverse: no -1 ["Dev", "Root", "Malware_IP"]
+
+
+
+network = ["log in", "access", "re-route", "handshake", "FIN_ACK", "RESET"]
+print(network[-3:-6:-2]) #extract "handshake" and "access" (-Slicing)
+
+network1 = [["10.0.0.1", "Admin"], ["192.168.1.5", "Guest"], ["172.16.0.10", "Root"]]
+print(network1[:2]) #only the second list: ["192.168.1.5", "Guest"].
+print(network1[2][1]) #extract just the string "Root" from the very last list.
+
+network2 = ["SYN", "ACK", "DATA_A", "DATA_B", "SIG_1", "FIN", "WAIT"]
+print(network2[-3:-6]) #["SIG_1", "DATA_B", "DATA_A"].**
+
+distances = [12.5, 14.2, 10.1, 8.9, 15.6, 20.3, 11.4]
+print(distances[-3:]) #[15.6, 20.3, 11.4]
+
+
+entry_vault = [["10:00", "Admin", ["192.168.1.1", 80]], ["10:01", "User_A", ["192.168.1.5", 443]], ["10:02", "Root", ["10.0.0.5", 22]]]
+print(entry_vault[:-1:-3:-1 ])#[["10:02", "Root", [...]], ["10:01", "User_A", [...]]]
+
+entry_vault2 = [
+    ["10:00", "Admin", ["192.168.1.1", 80]], 
+    ["10:01", "User_A", ["192.168.1.5", 443]], 
+    ["10:02", "Root", ["10.0.0.5", 22]]
+]
+print(entry_vault2[-1] #['10:01', 'User_A'], ['10:00', 'Admin']]. 
+sensor_stream1 = [0, 0, 0, 15.5, 18.2, 19.1, 0, 0]
+print(sensor_stream1[:-5:-2]) #extract [15.5, 18.2, 19.1] (-Slice)
+
+sensor_stream = [0, 0, 0, 15.5, 18.2, 19.1, 20.4, 22.1, 0, 0]
+print(sensor_stream[-4:-7:-1]) #extract 20.4, 19.1, 18.2
+
+

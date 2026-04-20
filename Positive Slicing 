@@ -1,0 +1,64 @@
+#
+#In Python slicing, the stop index is the element you DO NOT want.
+#Stop index grabs the element before the stop index.
+
+#desserts
+desserts = ['Galzed Donut', 'Lemon Pie', 'Carrot Cake', 'Ice Cream', 'Cheesecake']
+print(desserts[1:4]) #Lemon Pie,Carrot Cake and Ice cream
+print(desserts[3:]) #Ice Cream,Cheesecake
+print(desserts[0:5:2]) #Glazed Donut, Carrot Cake and Chessecake
+print(desserts[2:2]) #empty 
+print(desserts[1:10]) #Lemon pie, Carrot cake , Ice cream and Cheesecake
+print(desserts[2::2]) #Carrot cake and Cheesecake
+print(desserts[0:5]) #Galzed Donut', 'Lemon Pie', 'Carrot Cake', 'Ice Cream', 'Cheesecake
+print(desserts[3:3]) #empty 
+print(desserts[2:5]) #Carrot Cake', 'Ice Cream', 'Cheesecake
+print(desserts[1:3]) #Lemon Pie , Carrot Cake
+print(desserts[:]) #Galzed Donut', 'Lemon Pie', 'Carrot Cake', 'Ice Cream', 'Cheesecake'
+print(desserts[3:4]) #ice cream
+print(desserts[2:10]) #Carrot Cake , Ice cream cheesecake
+
+#teas
+teas = ['Mango Passion', 'Dragon Fruit', 'Milk Tea', 'Peach', 'Jasmine', 'Strawberry']
+print(teas[:2]) #Mango Passion and Dragonfruit
+print(teas[1:5:2]) #Dragon Fruit, Peach
+print(teas[2:5]) #Milk Tea', 'Peach', 'Jasmine'
+print(teas[4:]) #Jasmine, Strawberry
+print(teas[:4:3]) #Mango Peach
+print(teas[0:6:10]) #null
+print(teas[1:4]) #Dragon Fruit.Milk Tea,  Peach 
+print(teas[0:1]) #Null
+print(teas[:4]) #Mango Passion', 'Dragon Fruit', 'Milk Tea', 'Peach',
+print(teas[1:2]) #Dragon Fruit 
+print(teas[0:4]) #Mango Passion', 'Dragon Fruit', 'Milk Tea', 'Peach'
+print(teas[2:5]) #Milk, Tea Peach, Jasmin
+print(teas[5:6]) #Strawberry 
+print(teas[3:]) #Peach Jasmin Straberry
+print(teas[::3]) #Mango Passion Peach
+
+
+colors = ['red', 'blue', 'green', 'yellow', 'purple']
+print(colors[1:4])
+
+#extraxing even numbers
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(nums[::2])
+
+items = ['apple', 'orange', 'banana', 'grape'] #extracing last 2 items
+print(items[2:])
+
+data = [10, 20, 30, 40, 50] #etract only 10,20
+print(data[0:2])
+
+#print 998877
+sn = 'SN-998877' 
+print(sn[3:])
+
+text = 'ROBOTICS' #looking for ROB
+print(text[:3])
+
+nums = [0, 1, 2, 3, 4, 5] # print only 2 to the end 
+print(nums[2:])
+
+alpha = 'ABCDEFGHI'[1:7:2] #print BDF
+print(alpha[1:7:2])

@@ -8,3 +8,12 @@ print(Capcom[2], Capcom[4]) #Cammy, Eagle--> lists are zero index based that bec
 print(*Capcom)
 print(*select_characters)
 print(f"{Capcom[2]}")
+
+desserts = ["Galzed Donut", "Lemon Pie", "Carrot Cake", "Ice Cream", "Cheesecake"]
+teas = ["Mango Passion","Dragon Fruit","Milk Tea","Peach", "Jasmine","Strawberry"] 
+
+#IP address 
+blacklist = ["192.168.1.5", "10.0.0.42", "172.16.0.10"]
+
+
+

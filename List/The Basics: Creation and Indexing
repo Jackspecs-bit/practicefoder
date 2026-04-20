@@ -1,0 +1,37 @@
+
+#-------Practice Questions and Answers--------
+
+ports = [22, 80, 443, 8080]
+active_port = ports[0]
+print(active_port) #assign first port in the list to a variable called active_port 
+
+actions = ["Open", "Lower", "Grip", "Lift", "Rotate", "Release"]
+final_step = actions[-1]
+print(final_step) #extract the last index
+
+flagged_ips = ["192.168.1.1", "10.0.0.5", "172.16.254.1", "192.168.1.20"]
+tagert_subnet = flagged_ips[1:2]
+print(tagert_subnet) #extract extract the second and third IPs
+
+traffic_log = ["GET", "POST", "GET", "PUT", "DELETE", "GET"]
+reguest_count = traffic_log.count("GET")
+
+cities = ["Atlanta", "Baltimore", "Chicago","Denver", "Los Angeles", "Seattle"]
+print("Welome to " + cities[3])
+
+#Adding and changing elements
+cities.append("New York") # adds to end of the list
+cities.insert(0, "New York") #Now "New York" has an index of 0. 
+
+#Deleting and removing elements
+tasks = ["email Frank", "call Sarah", "meet with Zach"]
+del tasks[0]
+
+#popping elements
+#sometimes want to strike an element off a list but hang onto it for another purpose
+tasks = ["email Frank", "call Sarah", "meet with Zach"]
+latest_task_accomplished = tasks.pop(1)
+
+#Tuples - order cannot be changed 
+states_in_order_of_founding = ("Delaware",
+"Pennsylvania", "New Jersey", "Georgia") # parentheses instead of square brackets

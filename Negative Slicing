@@ -1,0 +1,37 @@
+#Robotics Control List
+
+motor_temps = [35, 38, 42, 50, 65]
+print(motor_temps[-2:]) #50,60
+
+gait = ['Lift L1', 'Move L1', 'Drop L1', 'Lift R2', 'Move R2', 'Drop R2']
+print(gait[-4:-1]) #Drop L1 'Lift R2', 'Move R2
+
+dist = [10.2, 11.5, 9.8, 8.4, 7.1, 5.0] #get last distant readings
+print(dist[-3:]) # 8.4, 7.1, 5.0
+
+path = ['Home', 'Hall', 'Door']
+print(path[::-1]) # door hall home
+
+
+heights = [10, 12, 15, 18, 20]
+print(heights[-3:-1]) #15 18
+
+dir = ['N', 'NE', 'E', 'SE', 'S']
+print(dir[-1]) #S
+
+log_data = ["Boot", "Sync", "Move", "Scan", "Alert", "Store", "Sleep"]
+print(log_data[-3:]) #last three events from the robot's memory
+print(log_data[-5:-3]) #isolates the logs for "Move" and "Scan"
+print(log_data[-5:-2]) #"Move", "Scan", "Alert"
+print(log_data[-2:-5]) #[]
+print(log_data[-1:-4:-1]) #Sleep Store Alert
+print(log_data[-10:-1]) #It returns all logs it can find starting from the beginning
+
+#Security Log Dataset
+logs = ["Login", "SQL_Query", "File_Access", "Port_Scan", "Upload", "Logout"]
+print(logs[-2:]) #isolate these last two items
+print(logs[-2:-5:-2]) #Upload" and "File_Access
+print(logs[::-2]) #"Logout", "Port_Scan", "SQL_Query"
+print(logs[-3:]) #removes the first 3 items "Login", "SQL_Query","File_Access"
+print(logs[-3:-1]) #Login", "SQL_Query", "File_Access"and the last item "Logout
+      
